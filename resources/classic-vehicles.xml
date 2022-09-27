@@ -1,123 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classic-vehicles xmlns="https://ClassicVehicles">
-    <car>
+    <vehicle>
         <name>Silver Shadow II</name>
         <model>Automatic Sedan</model>
         <country>Australia</country>
         <company>Rolls Royce</company>
         <price>29,500</price>
         <year>1979</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>Automatic Sedan</name>
         <model>Automatic Sedan</model>
         <country>Denmark</country>
         <company>Ford</company>
         <price>25,800</price>
         <year>1977</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>XHII Falcon</name>
         <model>Sedan</model>
         <country>Poland</country>
         <company>Ford</company>
         <price>23,500</price>
         <year>1999</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>Impreza WRX STi</name>
         <model>Manual Sedan</model>
         <country>Belarus</country>
         <company>Subaru</company>
         <price>17,400</price>
         <year>1995</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>HQ Premier</name>
         <model>Sedan</model>
         <country>America</country>
         <company>Holden</company>
         <price>15,500</price>
         <year>1971</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>1100 Rotary Powered</name>
         <model>Sedan</model>
         <country>Amsterdam</country>
         <company>FIAT</company>
         <price>12,000</price>
         <year>1953</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>VC Regal</name>
         <model>Automatic Sedan</model>
         <country>Brazil</country>
         <company>Valiant</company>
         <price>7,700</price>
         <year>1967</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>Mercury Cougar</name>
         <model>Automatic Coupe</model>
         <country>France</country>
         <company>Ford</company>
         <price>9,000</price>
         <year>1968</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>CJ6 Tuxedo</name>
         <model>Maunal 4wd</model>
         <country>Swizerland</country>
         <company>Jeep</company>
         <price>2,000</price>
         <year>1970</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>Commodore SS VF</name>
         <model>Automatic Sedan</model>
         <country>Luxembourg</country>
         <company>Holden</company>
         <price>25,800</price>
         <year>2015</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>C220 Classic W202</name>
         <model>Automatic Sedan</model>
         <country>Israel</country>
         <company>Mercedes Benz</company>
         <price>1,500</price>
         <year>1994</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>HT Custom</name>
         <model>Manual Ute</model>
         <country>New Zealand</country>
         <company>Holden</company>
         <price>18,850</price>
         <year>1983</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>360 Modena</name>
         <model>Automatic Coupe Import</model>
         <country>Italy</country>
         <company>Ferrari</company>
         <price>122,600</price>
         <year>2002</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>P5 MARK III</name>
         <model>Automatic Sedan</model>
         <country>England</country>
         <company>Rover</company>
         <price>5,000</price>
         <year>1967</year>
-    </car>
-    <car>
+    </vehicle>
+    <vehicle>
         <name>HSV Senator Signature GEN-F2 42129kms LSA 6.2L Super Charged V8</name>
         <model>Auto</model>
         <country>Pakistan</country>
         <company>Holden</company>
         <price>50,000</price>
         <year>2017</year>
-    </car>
+    </vehicle>
 </classic-vehicles>

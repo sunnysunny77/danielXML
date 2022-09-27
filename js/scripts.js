@@ -19,7 +19,7 @@ function displayResult(xml) {
 
     'use strict';
     const xmlDoc = xml.responseXML;
-    const result = xmlDoc.getElementsByTagName("car");
+    const result = xmlDoc.getElementsByTagName("vehicle");
     var table = "<tr><th>name</th><th>Model</th><th>Country</th><th>Company</th><th>Price</th><th>Year</th></tr>";
 
     for (const item of result) {
