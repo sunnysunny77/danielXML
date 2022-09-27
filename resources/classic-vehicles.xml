@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<classic-vehicles xmlns="https://ClassicVehicles">
+<classicvehicles xmlns="https://ClassicVehicles">
     <vehicle>
         <name>Silver Shadow II</name>
         <model>Automatic Sedan</model>
@@ -9,8 +9,8 @@
         <year>1979</year>
     </vehicle>
     <vehicle>
-        <name>Automatic Sedan</name>
-        <model>Automatic Sedan</model>
+        <name>Mustang</name>
+        <model>Manual</model>
         <country>Denmark</country>
         <company>Ford</company>
         <price>25,800</price>
@@ -120,4 +120,4 @@
         <price>50,000</price>
         <year>2017</year>
     </vehicle>
-</classic-vehicles>
+</classicvehicles>
