@@ -19,15 +19,27 @@ function displayResult(xml) {
 
     'use strict';
     const xmlDoc = xml.responseXML;
-    const result = xmlDoc.getElementsByTagName("test");
-    var txt = "";
+    const result = xmlDoc.getElementsByTagName("car");
+    var table = "<tr><th>name</th><th>Model</th><th>Country</th><th>Company</th><th>Price</th><th>Year</th></tr>";
 
     for (const item of result) {
        
-        txt += item.childNodes[0].nodeValue;
+        table += "<tr><td>" +
+       item.getElementsByTagName("name")[0].childNodes[0].nodeValue +
+        "</td><td>" +
+       item.getElementsByTagName("model")[0].childNodes[0].nodeValue +
+        "</td><td>" +
+       item.getElementsByTagName("country")[0].childNodes[0].nodeValue +
+        "</td><td>" +
+       item.getElementsByTagName("company")[0].childNodes[0].nodeValue +
+        "</td><td>" +
+       item.getElementsByTagName("price")[0].childNodes[0].nodeValue +
+        "</td><td>" +
+       item.getElementsByTagName("year")[0].childNodes[0].nodeValue +
+        "</td></tr>";
     }
 
-    document.getElementById("response").innerHTML = txt;
+    document.getElementById("response").innerHTML = table;
 }
 
 
