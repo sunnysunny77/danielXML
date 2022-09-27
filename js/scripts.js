@@ -39,12 +39,13 @@ function loadXMLDoc(documentName) {
             displayResult(this);
         }
     };
-    xmlhttp.open("GET", "resources/classic-vehicles.xml", true);
+    
+    xmlhttp.open("GET", documentName, true);
     xmlhttp.send();
 }
 
 window.onload = function () {
 
     'use strict';
-    loadXMLDoc();
+    loadXMLDoc("resources/classic-vehicles.xml");
 }
