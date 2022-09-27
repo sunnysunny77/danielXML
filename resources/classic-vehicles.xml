@@ -17,8 +17,8 @@
         <year>1977</year>
     </car>
     <car>
-        <name>XHII</name>
-        <model>Falcon</model>
+        <name>XHII Falcon</name>
+        <model>Sedan</model>
         <country>Poland</country>
         <company>Ford</company>
         <price>23,500</price>
