@@ -59,10 +59,14 @@ nav ul a h1 {
 
 main {
     background-color: whitesmoke;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main ul {
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
     list-style-type: none;
     display: flex;
