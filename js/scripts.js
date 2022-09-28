@@ -32,9 +32,9 @@ function result(xml) {
             result[i - 1].getElementsByTagName("model")[0].childNodes[0].nodeValue +
             "</li> <li> <b> Country: \xa0 </b>" +
             result[i - 1].getElementsByTagName("country")[0].childNodes[0].nodeValue +
-            "</li> <li> <b> Model: \xa0 </b>" +
-            result[i - 1].getElementsByTagName("company")[0].childNodes[0].nodeValue +
             "</li> <li> <b> Company: \xa0 </b>" +
+            result[i - 1].getElementsByTagName("company")[0].childNodes[0].nodeValue +
+            "</li> <li> <b> Price: \xa0 </b>$" +
             result[i - 1].getElementsByTagName("price")[0].childNodes[0].nodeValue +
             "</li> <li> <b> Year: \xa0 </b>" +
             result[i - 1].getElementsByTagName("year")[0].childNodes[0].nodeValue +
