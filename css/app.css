@@ -15,7 +15,7 @@ body {
     position: absolute;
 }
 
-header {
+#header {
     padding: 30% 0 0 0;
     background-image: url(../images/header.jpg);
     background-size: cover;
@@ -23,7 +23,7 @@ header {
     filter: grayscale(95%);
 }
 
-header div {
+#header div {
     position: absolute;
     top: 25px;
     right: 25px;
