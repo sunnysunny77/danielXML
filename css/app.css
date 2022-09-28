@@ -83,7 +83,6 @@ main ul li ul {
     padding: 0;
 }
 
-
 main ul li ul li {
     display: list-item;
     margin: 0;
@@ -112,12 +111,10 @@ footer ul li a {
 
 /* Breaks */
 @media only Screen and (max-width: 993px) {
-
     header {
         padding: 44.356% 0 0 0;
         background-image: url(../images/header-mobile.jpg);
     }
-
     header div {
         background-image: url(../images/logo-mobile.png);
         padding: calc(44.356% - 50px) 22.178% 0 22.178%;
