@@ -7,9 +7,13 @@ function displayResult(xml) {
 
     for (const item of result) {
 
-        table += "<li> <ul> <li> <b> Name: \xa0 </b>" +
+        const name = item.getElementsByTagName("name")[0].childNodes[0].nodeValue;
 
-            item.getElementsByTagName("name")[0].childNodes[0].nodeValue +
+        table += "<li> <ul> <li>" + 
+        
+            "<img src='https://via.placeholder.com/200x200' alt='" + name + "'/>" +
+            "</li> <li> <b> Name: \xa0 </b>" +
+            name +
             "</li> <li> <b> Model: \xa0 </b>" +
             item.getElementsByTagName("model")[0].childNodes[0].nodeValue +
             "</li> <li> <b> Country: \xa0 </b>" +

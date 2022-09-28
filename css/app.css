@@ -1,7 +1,101 @@
 @charset "utf-8";
-/* css */  
+/* css */
+
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    position: relative;
+}
+
+header {
+    padding: 30% 0 0 0;
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    position: relative;
+    filter: grayscale(85%);
+}
+
+header div{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: calc(30% - 50px) 15% 0 15%;
+    filter: grayscale(85%);
+    background-image: url(../images/logo.png);
+    background-size: cover;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul li a { 
+    text-decoration: none;
+    color: darkslategray;
+}
+
+nav ul a h1 {
+    font-size: inherit;
+    margin: 0;
+}
+
+main {
+    background-color: whitesmoke;
+}
+
+main ul {
+    margin: auto;
+    padding: 0;
+}
+
+footer {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+footer  ul li a { 
+    text-decoration: none;
+    color: white;
+}
 
 /* Breaks */  
-@media only Screen and (max-width: 992px) {
+@media only Screen and (max-width: 993px) {
+
+    header {
+        padding: 44.356% 0 0 0;
+        background-image: url(../images/header-mobile.jpg);
+    }
    
+    header div {
+        background-image: url(../images/logo-mobile.png);
+        padding: calc(44.356% - 50px) 22.178% 0 22.178%;
+    }
 }
