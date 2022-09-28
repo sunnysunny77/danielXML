@@ -41,7 +41,7 @@ function result(xml) {
 
             "</li> </ul> </li>";
 
-        if (i % 10 === 0 || i === result.length) {
+        if (i % 15 === 0 || i === result.length) {
 
             array.push(buffer);
             buffer = "";
@@ -62,7 +62,7 @@ function result(xml) {
     for (let i = 0; i <= nodes.length; i++) {
 
         const inner = array[i];
-        
+
         events(
             nodes[i],
             "click",
