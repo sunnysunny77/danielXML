@@ -19,7 +19,7 @@ function result(xml) {
 
     let array = [];
     let buffer = "";
-    let page = ""
+    let page = "";
 
     for (let i = 1; i <= result.length; i++) {
 
@@ -61,11 +61,13 @@ function result(xml) {
 
     for (let i = 0; i <= nodes.length; i++) {
 
+        const inner = array[i];
+        
         events(
             nodes[i],
             "click",
             function () {
-                response.innerHTML = array[i]
+                response.innerHTML = inner;
             },
             null
         );
@@ -95,4 +97,4 @@ window.onload = function () {
     'use strict';
 
     loadXMLDoc("resources/classic-vehicles.xml");
-}
+};
