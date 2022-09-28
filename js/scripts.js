@@ -9,7 +9,7 @@ function displayResult(xml) {
 
         const name = item.getElementsByTagName("name")[0].childNodes[0].nodeValue;
 
-        table += "<li> <ul> <li>" + 
+        table += "<li> <ul class='vehicle'> <li>" + 
         
             "<img src='https://via.placeholder.com/200x200' alt='" + name + "'/>" +
             "</li> <li> <b> Name: \xa0 </b>" +

@@ -61,10 +61,35 @@ main {
     background-color: whitesmoke;
 }
 
-main ul {
+#response {
+    margin: auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+}
+
+.vehicle {
+    list-style-type: none;
     margin: auto;
     padding: 0;
 }
+
+#response li {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+}
+
+#response .vehicle li {
+    display: list-item;
+    margin: auto;
+    padding: 10px 0;
+}
+
+
 
 footer {
     background-color: black;
