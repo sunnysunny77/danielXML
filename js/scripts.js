@@ -67,6 +67,7 @@ function result(xml) {
             nodes[i],
             "click",
             function () {
+
                 response.innerHTML = inner;
             },
             null
@@ -92,9 +93,11 @@ function loadXMLDoc(documentName) {
     xmlhttp.send();
 }
 
-window.onload = function () {
+function init () {
 
     'use strict';
 
     loadXMLDoc("resources/classic-vehicles.xml");
-};
+}
+
+window.onload = init;
