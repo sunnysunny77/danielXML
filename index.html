@@ -12,29 +12,37 @@
 </head>
 
 <body>
-    
-    <header role="img" aria-label="Classic car infront of wall">
 
-        <a href="#" aria-label="CLASSIC VEHICLES"> <div  role="img" aria-label="classic car logo"></div> </a>
+    <a accesskey="s" id="hide" href="#main"> skip to main </a>
 
-    </header>
+    <a href="#" aria-label="CLASSIC VEHICLES">
+
+        <header id="header" role="img" aria-label="Classic car infront of wall">
+
+            <div role="img" aria-label="classic car logo"></div>
+
+        </header>
+
+    </a>
 
     <nav>
 
         <ul>
 
-            <li> <a href="#"> <h1> CLASSIC VEHICLES </h1> </a> </li>
-            
+            <li> <a accesskey="1" href="#"> <h1> CLASSIC VEHICLES </h1> </a> </li>
+
+            <li> <a accesskey="r" href="#header"> Return to top </a> </li>
+
         </ul>
 
     </nav>
 
-    <main>
+    <main id="main">
+
+        <div id="pages"></div>
 
         <ul id="response"></ul>
 
-        <div id="pages"></div>
-        
     </main>
 
     <footer>
@@ -42,7 +50,19 @@
         <ul>
 
             <li> <a href="#"> Classic Vehicles </a> </li>
-            
+
+            <li>
+
+                <ul>
+
+                    <li> <a accesskey="t" href="tel:123-456-7890">123-456-7890</a> </li>
+
+                    <li> <a accesskey="m" href="mailto: abc@example.com">Send Email</a> </li>
+
+                </ul>
+
+            </li>
+
         </ul>
 
     </footer>

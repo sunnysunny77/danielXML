@@ -7,12 +7,20 @@ body {
     position: relative;
 }
 
+#hide {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+}
+
 header {
     padding: 30% 0 0 0;
     background-image: url(../images/header.jpg);
     background-size: cover;
     position: relative;
-    filter: grayscale(85%);
+    filter: grayscale(95%);
 }
 
 header div {
@@ -20,7 +28,7 @@ header div {
     top: 25px;
     right: 25px;
     padding: calc(30% - 50px) 15% 0 15%;
-    filter: grayscale(85%);
+    filter: grayscale(95%);
     background-image: url(../images/logo.png);
     background-size: cover;
 }
@@ -37,14 +45,15 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px;
 }
 
 nav ul li {
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 25px;
+    display: inline-block;
 }
 
 nav ul li a {
@@ -59,10 +68,22 @@ nav ul a h1 {
 
 main {
     background-color: whitesmoke;
-    min-height: 75vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    min-height: 100vh;
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: large;
+}
+
+main div span:hover,
+main div span:focus {
+    color: gold;
 }
 
 main ul {
@@ -93,12 +114,26 @@ main ul li ul li {
     padding: 10px 0;
 }
 
+main ul li ul li a {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+main ul li ul li a img {
+    width: 100%;
+}
+
+main ul li ul li a img:hover, main ul li ul li a img:focus {
+    transform: scale(1.05);
+    opacity: 0.75;
+    transition: transform 1s linear, opacity 1s linear;
+}
+
 footer {
     background-color: black;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-size: smaller;
 }
 
 footer ul {
@@ -106,11 +141,28 @@ footer ul {
     padding: 0;
     text-align: center;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+footer ul li {
+    display: inline-block;
+
 }
 
 footer ul li a {
     text-decoration: none;
     color: white;
+    padding: 10px;
+}
+
+footer ul li a:hover,
+footer ul li a:focus,
+nav ul li a:hover,
+nav ul li a:focus {
+    color: gold;
 }
 
 /* Breaks */
@@ -119,6 +171,7 @@ footer ul li a {
         padding: 44.356% 0 0 0;
         background-image: url(../images/header-mobile.jpg);
     }
+
     header div {
         background-image: url(../images/logo-mobile.png);
         padding: calc(44.356% - 50px) 22.178% 0 22.178%;

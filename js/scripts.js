@@ -23,13 +23,11 @@ function result(xml) {
 
     for (let i = 1; i <= result.length; i++) {
 
-        const name = result[i - 1].getElementsByTagName("name")[0].childNodes[0].nodeValue;
-
         buffer += "<li> <ul> <li>" +
 
-            "<img src='./images/200x200.png' alt='" + name + "'/>" +
+            "<a target='_blank' href='./images/holder.jpg' ><img src='./images/holder.jpg' alt='image" + i + "'/></a>" +
             "</li> <li> <b> Name: \xa0 </b>" +
-            name +
+            result[i - 1].getElementsByTagName("name")[0].childNodes[0].nodeValue +
             "</li> <li> <b> Model: \xa0 </b>" +
             result[i - 1].getElementsByTagName("model")[0].childNodes[0].nodeValue +
             "</li> <li> <b> Country: \xa0 </b>" +
@@ -54,10 +52,10 @@ function result(xml) {
 
     for (let i = 1; i <= array.length; i++) {
 
-        page += "<span class='page'>" + [i] + "</span>";
+        page += "<span class='page'>" + [i] + ".\xa0</span>";
     }
 
-    pages.innerHTML = page;
+    pages.innerHTML = "Page:\xa0" + page;
 
     const nodes = pages.children;
 
