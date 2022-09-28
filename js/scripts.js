@@ -25,7 +25,7 @@ function result(xml) {
 
         const name = result[i - 1].getElementsByTagName("name")[0].childNodes[0].nodeValue;
 
-        buffer += "<li> <ul class='vehicle'> <li>" +
+        buffer += "<li> <ul> <li>" +
 
             "<img src='./images/200x200.png' alt='" + name + "'/>" +
             "</li> <li> <b> Name: \xa0 </b>" +
@@ -50,7 +50,7 @@ function result(xml) {
         }
     }
 
-    response.innerHTML = array[1];
+    response.innerHTML = array[0];
 
     for (let i = 1; i <= array.length; i++) {
 
