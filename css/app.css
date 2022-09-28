@@ -79,15 +79,14 @@ main ul li {
 }
 
 main ul li ul {
-    list-style-type: none;
-    margin: auto;
+    margin: 0;
     padding: 0;
 }
 
 
 main ul li ul li {
     display: list-item;
-    margin: auto;
+    margin: 0;
     padding: 10px 0;
 }
 
