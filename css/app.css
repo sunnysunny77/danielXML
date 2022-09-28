@@ -167,12 +167,11 @@ nav ul li a:focus {
 
 /* Breaks */
 @media only Screen and (max-width: 993px) {
-    header {
+    #header {
         padding: 44.356% 0 0 0;
         background-image: url(../images/header-mobile.jpg);
     }
-
-    header div {
+    #header div {
         background-image: url(../images/logo-mobile.png);
         padding: calc(44.356% - 50px) 22.178% 0 22.178%;
     }
