@@ -51,7 +51,7 @@ function result(xml) {
 
     response.innerHTML = array[0];
 
-    page += "<span id='next'>&#10146;\xa0</span>";
+    page += "<span id='next'>&#10146;\xa0Page\xa0</span>";
 
     for (let i = 1; i <= array.length; i++) {
 
