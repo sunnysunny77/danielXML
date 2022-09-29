@@ -20,8 +20,8 @@ function result(xml) {
     let array = [];
     let buffer = "";
     let page = "";
-    let index = 0;
-
+    let count = 0;
+   
     for (let i = 1; i <= result.length; i++) {
 
         buffer += "<li> <ul> <li>" +
@@ -62,34 +62,34 @@ function result(xml) {
 
     const nodes = document.getElementsByClassName("page");
 
-    for (let i = 0; i <= nodes.length; i++) {
-
-        const inner = array[i];
+    array.forEach(function (item, index) {
 
         events(
-            nodes[i],
+            nodes[index],
             "click",
             function () {
 
-                response.innerHTML = inner;
+                count = index;
+                response.innerHTML = item;
             },
             null
         );
-    }
+    });
 
     events(
         document.getElementById("next"),
         "click",
         function () {
 
-            if (array.length !== index + 1) {
-
-                response.innerHTML = array[index + 1];
-                index++;
+            if (array.length -1  > count) {
+        
+                count++;
+                response.innerHTML = array[count];
+               
             } else {
                 
-                index = 0;
-                response.innerHTML = array[index];
+                count = 0;
+                response.innerHTML = array[count];
             }
         },
         null
