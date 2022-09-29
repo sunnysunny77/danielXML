@@ -86,6 +86,10 @@ function result(xml) {
 
                 response.innerHTML = array[index + 1];
                 index++;
+            } else {
+                
+                index = 0;
+                response.innerHTML = array[index];
             }
         },
         null
