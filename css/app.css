@@ -76,10 +76,27 @@ main {
 
 main p {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 100px;
+    height: 50px;
     font-size: large;
+    width: 73px;
+    overflow-x: scroll;
+    margin: 25px auto 25px auto;
+    scrollbar-color: #e1ca6f rgba(97, 97, 97, 0.25);
+    scrollbar-width: thin;
+}
+
+main p::-webkit-scrollbar {
+    width: 7px;
+}
+
+main p::-webkit-scrollbar-thumb {
+    background: #e1ca6f;
+}
+
+main p::-webkit-scrollbar-track {
+    background: rgba(97, 97, 97, 0.25);
 }
 
 main p span:hover,
@@ -126,7 +143,8 @@ main ul li ul li a img {
     width: 100%;
 }
 
-main ul li ul li a img:hover, main ul li ul li a img:focus {
+main ul li ul li a img:hover,
+main ul li ul li a img:focus {
     transform: scale(1.05);
     opacity: 0.75;
     transition: transform 1s linear, opacity 1s linear;
@@ -172,6 +190,7 @@ nav ul li a:focus {
         padding: 44.356% 0 0 0;
         background-image: url(../images/header-mobile.jpg);
     }
+
     #header div {
         background-image: url(../images/logo-mobile.png);
         padding: calc(44.356% - 50px) calc(22.178% - 25px) 0 calc(22.178% - 25px);
