@@ -80,7 +80,7 @@ main p {
     align-items: center;
     height: 50px;
     font-size: large;
-    width: 73px;
+    width: 171px;
     overflow-x: scroll;
     margin: 25px auto 25px auto;
     scrollbar-color: #e1ca6f rgba(97, 97, 97, 0.25);
@@ -88,7 +88,7 @@ main p {
 }
 
 main p::-webkit-scrollbar {
-    width: 7px;
+    height: 10px;
 }
 
 main p::-webkit-scrollbar-thumb {
