@@ -21,7 +21,7 @@ function result(xml) {
     let buffer = "";
     let page = "";
     let count = 0;
-   
+
     for (let i = 1; i <= result.length; i++) {
 
         buffer += "<li> <ul> <li>" +
@@ -81,13 +81,13 @@ function result(xml) {
         "click",
         function () {
 
-            if (array.length -1  > count) {
-        
+            if (array.length - 1 > count) {
+
                 count++;
                 response.innerHTML = array[count];
-               
+
             } else {
-                
+
                 count = 0;
                 response.innerHTML = array[count];
             }
