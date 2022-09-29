@@ -20,6 +20,7 @@ function result(xml) {
     let array = [];
     let buffer = "";
     let page = "";
+    let index = 0;
 
     for (let i = 1; i <= result.length; i++) {
 
@@ -50,14 +51,16 @@ function result(xml) {
 
     response.innerHTML = array[0];
 
+    page += "<span id='next'>&#10146;\xa0</span>";
+
     for (let i = 1; i <= array.length; i++) {
 
         page += "<span class='page'>" + [i] + ".\xa0</span>";
     }
 
-    pages.innerHTML = "Page:\xa0" + page;
+    pages.innerHTML = page;
 
-    const nodes = pages.children;
+    const nodes = document.getElementsByClassName("page");
 
     for (let i = 0; i <= nodes.length; i++) {
 
@@ -73,6 +76,20 @@ function result(xml) {
             null
         );
     }
+
+    events(
+        document.getElementById("next"),
+        "click",
+        function () {
+
+            if (array.length !== index + 1) {
+
+                response.innerHTML = array[index + 1];
+                index++;
+            }
+        },
+        null
+    );
 }
 
 function loadXMLDoc(documentName) {
@@ -93,7 +110,7 @@ function loadXMLDoc(documentName) {
     xmlhttp.send();
 }
 
-function init () {
+function init() {
 
     'use strict';
 
