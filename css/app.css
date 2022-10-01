@@ -23,16 +23,6 @@ body {
     filter: grayscale(75%);
 }
 
-#header div {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    padding: calc(30% - 50px) calc(15% - 25px)0 calc(15% - 25px);
-    filter: grayscale(75%);
-    background-image: url(../images/logo.png);
-    background-size: cover;
-}
-
 nav {
     position: sticky;
     top: 0;
@@ -74,34 +64,8 @@ main {
     min-height: 100vh;
 }
 
-main p {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 50px;
-    font-size: large;
-    width: 171px;
-    overflow-x: scroll;
-    margin: 25px auto 25px auto;
-    scrollbar-color: #e1ca6f rgba(97, 97, 97, 0.25);
-    scrollbar-width: thin;
-}
-
-main p::-webkit-scrollbar {
-    height: 10px;
-}
-
-main p::-webkit-scrollbar-thumb {
-    background: #e1ca6f;
-}
-
-main p::-webkit-scrollbar-track {
-    background: rgba(97, 97, 97, 0.25);
-}
-
-main p span:hover,
-main p span:focus {
-    color: gold;
+main h2 {
+    text-align: center;
 }
 
 main ul {
@@ -189,10 +153,5 @@ nav ul li a:focus {
     #header {
         padding: 44.356% 0 0 0;
         background-image: url(../images/header-mobile.jpg);
-    }
-
-    #header div {
-        background-image: url(../images/logo-mobile.png);
-        padding: calc(44.356% - 50px) calc(22.178% - 25px) 0 calc(22.178% - 25px);
     }
 }

@@ -120,12 +120,4 @@
         <price>50,000</price>
         <year>2017</year>
     </vehicle>
-    <vehicle>
-        <name>MX5</name>
-        <model>Manual</model>
-        <country>Canada</country>
-        <company>Mazda</company>
-        <price>5,000</price>
-        <year>1989</year>
-    </vehicle>
 </classicvehicles>
