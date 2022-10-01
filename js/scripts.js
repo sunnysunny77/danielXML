@@ -3,7 +3,7 @@ function result(xml) {
     'use strict';
 
     const xmlDoc = xml.responseXML;
-    const result = xmlDoc.getElementsByTagName("vehicle")
+    const result = xmlDoc.getElementsByTagName("vehicle");
 
     let buffer = "";
     let count = 1;
@@ -58,4 +58,4 @@ function init() {
     loadXMLDoc("resources/classic-vehicles.xml");
 }
 
-window.onload = init
+window.onload = init;
